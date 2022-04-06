@@ -8,24 +8,55 @@
   <div class="row">
     <div class="col-md-6">
       <div class="card mb-4">
-        <h5 class="card-header">Default</h5>
+        <h5 class="card-header">Add job detials</h5>
         <div class="card-body">
           <div>
-            <label for="defaultFormControlInput" class="form-label">Name</label>
+            <label for="defaultFormControlInput" class="form-label">job title</label>
             <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe" aria-describedby="defaultFormControlHelp" />
             <div id="defaultFormControlHelp" class="form-text">We'll never share your details with anyone else.</div>
           </div>
+          <div>
+            <label for="defaultFormControlInput" class="form-label">company</label>
+            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe" aria-describedby="defaultFormControlHelp" />
+            <div id="defaultFormControlHelp" class="form-text">We'll never share your details with anyone else.</div>
+          </div>
+          <div>
+            <label for="defaultFormControlInput" class="form-label">location</label>
+            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe" aria-describedby="defaultFormControlHelp" />
+            <div id="defaultFormControlHelp" class="form-text">We'll never share your details with anyone else.</div>
+          </div>
+          <div>
+            <label for="defaultFormControlInput" class="form-label">subject</label>
+            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe" aria-describedby="defaultFormControlHelp" />
+            <div id="defaultFormControlHelp" class="form-text">We'll never share your details with anyone else.</div>
+          </div>
+          
         </div>
+        
       </div>
     </div>
     <div class="col-md-6">
       <div class="card mb-4">
-        <h5 class="card-header">Float label</h5>
+       
         <div class="card-body">
-          <div class="form-floating">
-            <input type="text" class="form-control" id="floatingInput" placeholder="John Doe" aria-describedby="floatingInputHelp" />
-            <label for="floatingInput">Name</label>
-            <div id="floatingInputHelp" class="form-text">We'll never share your details with anyone else.</div>
+        <div>
+            <label for="exampleFormControlTextarea1" class="form-label">job roles description</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlSelect1" class="form-label">year of experinces</label>
+            <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          
+          <div>
+            <label for="defaultFormControlInput" class="form-label">salary</label>
+            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe" aria-describedby="defaultFormControlHelp" />
+            <div id="defaultFormControlHelp" class="form-text">We'll never share your details with anyone else.</div>
           </div>
         </div>
       </div>

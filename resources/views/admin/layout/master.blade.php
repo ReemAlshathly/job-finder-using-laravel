@@ -173,7 +173,7 @@
   
   <ul class="menu-inner py-1">
     <!-- Dashboards -->
-    <li class="menu-item">
+    <!-- <li class="menu-item">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-home-circle"></i>
         <div data-i18n="Dashboards">Dashboards</div>
@@ -195,103 +195,11 @@
           </a>
         </li>
       </ul>
-    </li>
+    </li> -->
 
     <!-- Layouts -->
-    <li class="menu-item">
-      <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons bx bx-layout"></i>
-        <div data-i18n="Layouts">Layouts</div>
-      </a>
-
-      <ul class="menu-sub">
-
-        <li class="menu-item">
-          <a href="layouts-collapsed-menu.html" class="menu-link">
-            <div data-i18n="Collapsed menu">Collapsed menu</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="layouts-content-navbar.html" class="menu-link">
-            <div data-i18n="Content navbar">Content navbar</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="layouts-content-navbar-with-sidebar.html" class="menu-link">
-            <div data-i18n="Content nav + Sidebar">Content nav + Sidebar</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/horizontal-menu-template" class="menu-link" target="_blank">
-            <div data-i18n="Horizontal">Horizontal</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="layouts-without-menu.html" class="menu-link">
-            <div data-i18n="Without menu">Without menu</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="layouts-without-navbar.html" class="menu-link">
-            <div data-i18n="Without navbar">Without navbar</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="layouts-fluid.html" class="menu-link">
-            <div data-i18n="Fluid">Fluid</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="layouts-container.html" class="menu-link">
-            <div data-i18n="Container">Container</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="layouts-blank.html" class="menu-link">
-            <div data-i18n="Blank">Blank</div>
-          </a>
-        </li>
-      </ul>
-    </li>
-
-    <!-- Apps & Pages -->
-    <li class="menu-header small text-uppercase">
-      <span class="menu-header-text">Apps &amp; Pages</span>
-    </li>
-    <li class="menu-item">
-      <a href="app-calendar.html" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-calendar"></i>
-        <div data-i18n="Calendar">Calendar</div>
-      </a>
-    </li>
-    <li class="menu-item">
-      <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class='menu-icon tf-icons bx bx-food-menu'></i>
-        <div data-i18n="Invoice">Invoice</div>
-      </a>
-      <ul class="menu-sub">
-        <li class="menu-item">
-          <a href="app-invoice-list.html" class="menu-link">
-            <div data-i18n="List">List</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="app-invoice-preview.html" class="menu-link">
-            <div data-i18n="Preview">Preview</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="app-invoice-edit.html" class="menu-link">
-            <div data-i18n="Edit">Edit</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="app-invoice-add.html" class="menu-link">
-            <div data-i18n="Add">Add</div>
-          </a>
-        </li>
-      </ul>
-    </li>
+    
+      
     <li class="menu-item">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-user"></i>
@@ -309,12 +217,12 @@
     <li class="menu-item">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class='menu-icon tf-icons bx bx-check-shield'></i>
-        <div data-i18n="job mangement">Users mangement</div>
+        <div data-i18n="job mangement"></div>
       </a>
       <ul class="menu-sub">
         <li class="menu-item">
-          <a href="app-access-roles.html" class="menu-link">
-            <div data-i18n="Add job">Add user</div>
+          <a href="/add_job" class="menu-link">
+            <div data-i18n="Add job">Add job</div>
           </a>
         </li>
         <li class="menu-item">

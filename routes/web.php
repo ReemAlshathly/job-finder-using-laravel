@@ -57,6 +57,20 @@ Route::get('/dashboard', function () {
 return view('admin.layout.master');
 });
 
+///////////////////
+Route::get('/add_adv', function () {
+    return view('admin.Advartisment.create');
+});
+Route::get('/add_companies', function () {
+    return view('admin.companies.create');
+});
+Route::get('/add_services', function () {
+return view('admin.services.create');
+});
+Route::get('/add_job', function () {
+    return view('admin.jobs.create');
+    });
+
 
 Route::get('/loginn',[AuthController::class,'showLogin']);
 Route::post('/do_login',[AuthController::class,'login'])->name('do_login');
