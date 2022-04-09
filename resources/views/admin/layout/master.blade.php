@@ -226,7 +226,7 @@
           </a>
         </li>
         <li class="menu-item">
-          <a href="app-access-roles.html" class="menu-link">
+          <a href="/showall_job" class="menu-link">
             <div data-i18n="show jobs">show user</div>
           </a>
         </li>
@@ -237,131 +237,74 @@
         </li>
       </ul>
     </li>
+    
     <li class="menu-item">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons bx bx-dock-top"></i>
-        <div data-i18n="Pages">Pages</div>
+      <i class="menu-icon tf-icons bx bx-dock-top"></i>
+        <div data-i18n="Advertisment "></div>
       </a>
       <ul class="menu-sub">
         <li class="menu-item">
-          <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <div data-i18n="User Profile">User Profile</div>
-          </a>
-          <ul class="menu-sub">
-            <li class="menu-item">
-              <a href="pages-profile-user.html" class="menu-link">
-                <div data-i18n="Profile">Profile</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="pages-profile-teams.html" class="menu-link">
-                <div data-i18n="Teams">Teams</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="pages-profile-projects.html" class="menu-link">
-                <div data-i18n="Projects">Projects</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="pages-profile-connections.html" class="menu-link">
-                <div data-i18n="Connections">Connections</div>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item">
-          <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <div data-i18n="Account Settings">Account Settings</div>
-          </a>
-          <ul class="menu-sub">
-            <li class="menu-item">
-              <a href="pages-account-settings-account.html" class="menu-link">
-                <div data-i18n="Account">Account</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="pages-account-settings-security.html" class="menu-link">
-                <div data-i18n="Security">Security</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="pages-account-settings-billing.html" class="menu-link">
-                <div data-i18n="Billing & Plans">Billing & Plans</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="pages-account-settings-notifications.html" class="menu-link">
-                <div data-i18n="Notifications">Notifications</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="pages-account-settings-connections.html" class="menu-link">
-                <div data-i18n="Connections">Connections</div>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item">
-          <a href="pages-faq.html" class="menu-link">
-            <div data-i18n="FAQ">FAQ</div>
+          <a href="/add_adv" class="menu-link">
+            <div data-i18n="Add adv">Add adv</div>
           </a>
         </li>
         <li class="menu-item">
-          <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <div data-i18n="Help Center">Help Center</div>
-          </a>
-          <ul class="menu-sub">
-            <li class="menu-item">
-              <a href="pages-help-center-landing.html" class="menu-link">
-                <div data-i18n="List">Landing</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="pages-help-center-categories.html" class="menu-link">
-                <div data-i18n="Preview">Categories</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="pages-help-center-article.html" class="menu-link">
-                <div data-i18n="Edit">Article</div>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item">
-          <a href="pages-pricing.html" class="menu-link">
-            <div data-i18n="Pricing">Pricing</div>
+          <a href="/showall_adv" class="menu-link">
+            <div data-i18n="show adv">show adv</div>
           </a>
         </li>
         <li class="menu-item">
-          <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <div data-i18n="Misc">Misc</div>
+          <a href="" class="">
+            <div data-i18n="">view users</div>
           </a>
-          <ul class="menu-sub">
-            <li class="menu-item">
-              <a href="pages-misc-error.html" class="menu-link">
-                <div data-i18n="Error">Error</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="pages-misc-under-maintenance.html" class="menu-link">
-                <div data-i18n="Under Maintenance">Under Maintenance</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="pages-misc-comingsoon.html" class="menu-link" target="_blank">
-                <div data-i18n="Coming Soon">Coming Soon</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="pages-misc-not-authorized.html" class="menu-link">
-                <div data-i18n="Not Authorized">Not Authorized</div>
-              </a>
-            </li>
-          </ul>
         </li>
       </ul>
+    </li>
+    
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+      <i class="menu-icon tf-icons bx bx-copy"></i>
+        <div data-i18n="services "></div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="/add_services" class="menu-link">
+            <div data-i18n="Add services">Add services</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="/showall_services" class="menu-link">
+            <div data-i18n="show services">show adv</div>
+          </a>
+        </li>
+        
+        <li class="menu-item">
+          <a href="" class="">
+            <div data-i18n="">view users</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+   
+    <li class="menu-item">
+    <ul class="menu-sub">
+    
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-dock-top"></i>
+        <div data-i18n="Advartisment">Advartisment</div>
+      </a>
+      <li class="menu-item">
+          <a href="/showall_job" class="menu-link">
+            <div data-i18n="show jobs">show user</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="" class="">
+            <div data-i18n="">view users</div>
+          </a>
+        </li>
+        </ul>
     </li>
     <li class="menu-item">
       <a href="javascript:void(0);" class="menu-link menu-toggle">

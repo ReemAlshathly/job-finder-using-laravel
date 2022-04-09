@@ -5,6 +5,8 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\CategoriesController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\JobsController;
+use App\Http\Controllers\CompaniesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/home', function () {
+Route::get('/index', function () {
     return view('front.index');
 });
 Route::get('/AboutUs', function () {
@@ -57,28 +59,44 @@ Route::get('/dashboard', function () {
 return view('admin.layout.master');
 });
 
-///////////////////
+///////////////////Advertisment
 Route::get('/add_adv', function () {
     return view('admin.Advartisment.create');
 });
+Route::get('/showall_adv', function () {
+    return view('admin.Advartisment.list_all');
+});
+////////////////////////////companies
 Route::get('/add_companies', function () {
     return view('admin.companies.create');
 });
 Route::get('/add_services', function () {
 return view('admin.services.create');
 });
+Route::get('/showall_services', function () {
+    return view('admin.services.list_all');
+});
 Route::get('/add_job', function () {
     return view('admin.jobs.create');
     });
-
-
+ Route::get('/showall_job', function () {
+        return view('admin.jobs.list_all');
+    });
+ 
 Route::get('/loginn',[AuthController::class,'showLogin']);
 Route::post('/do_login',[AuthController::class,'login'])->name('do_login');
 
 Route::get('/create_user',[AuthController::class,'createUser'])->name('create_user');
 Route::post('/save_user',[AuthController::class,'register'])->name('save_user');
 
-Route::get('/home',[DashboardController::class,'dashboard'])->name('home');
+Route::get('/',[DashboardController::class,'dashboard'])->name('home');
 
 Route::get('/show_all_users',[AuthController::class,'listAll'])->name("show_users");
 Route::get('/new_job',[CategoriesController::class,'create'])->name('new_category');
+
+
+// Route::get('/create_job',[DashboardController::class,'dashboard']);
+// // Route::post('/job',[jobControler::class,'register'])->name('save_user');
+
+Route::get('/create_job',[CompaniesController::class,'create']);
+Route::get('/page',[JobsController::class,'index']);
