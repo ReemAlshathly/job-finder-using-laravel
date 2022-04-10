@@ -13,12 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('coustmer_messeges', function (Blueprint $table) {
+        Schema::create('advertisments', function (Blueprint $table) {
             $table->id();
-            $table->string('fullName');
-            $table->string('Email');
-            $table->integer('phone');
-            $table->text('messege');
+            $table->string('title');
+            $table->string('url');
+            $table->string('image')->default('Adv.png');
+            $table->string('company');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('coustmer_messeges');
+        Schema::dropIfExists('advertisments');
     }
 };
