@@ -62,14 +62,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
 
     <!-- Icons -->
-    <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
-    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
-    <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
+    <link rel="stylesheet" href="/assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="/assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="/assets/vendor/fonts/flag-icons.css" />
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="assets/vendor/css/rtl/theme-semi-dark.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="/assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="/assets/vendor/css/rtl/theme-semi-dark.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="/assets/css/demo.css" />
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
@@ -80,13 +80,13 @@
     <!-- Page CSS -->
     
     <!-- Helpers -->
-    <script src="assets/vendor/js/helpers.js"></script>
+    <script src="/assets/vendor/js/helpers.js"></script>
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
-    <script src="assets/vendor/js/template-customizer.js"></script>
+    <script src="/assets/vendor/js/template-customizer.js"></script>
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="assets/js/config.js"></script>
+    <script src="/assets/js/config.js"></script>
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
@@ -226,7 +226,7 @@
           </a>
         </li>
         <li class="menu-item">
-          <a href="/showall_job" class="menu-link">
+          <a href="/list_jobs" class="menu-link">
             <div data-i18n="show jobs">show user</div>
           </a>
         </li>
@@ -307,9 +307,24 @@
         </ul>
     </li>
     <li class="menu-item">
+    <ul class="menu-sub">
+    
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-dock-top"></i>
+        <div data-i18n="messages"></div>
+      </a>
+      <li class="menu-item">
+          <a href="/showall_messeg" class="menu-link">
+            <div data-i18n="show jobs">show messeges</div>
+          </a>
+        </li>
+        
+        </ul>
+    </li>
+    <li class="menu-item">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
-        <div data-i18n="Authentications">Authentications</div>
+        <div data-i18n="show messeges">Authentications</div>
       </a>
       <ul class="menu-sub">
         <li class="menu-item">

@@ -22,7 +22,8 @@ return new class extends Migration
             $table->string('roles');
             $table->double('salary');
             $table->string('year_of_experince');
-            $table->string('company');
+            $table->integer('company');
+            $table->boolean("is_active")->default(1);
             $table->timestamps();
         });
     }

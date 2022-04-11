@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('location');
             $table->integer('activejobs');
+            $table->boolean("is_active")->default(1);
             $table->timestamps();
         });
     }

@@ -9,6 +9,13 @@ use Illuminate\Support\Facades\Validator;
 class JobsController extends Controller
 {
     //
+    public function index(){
+        $jobs=job::orderBy('id','desc')->get();
+        return view('admin.jobs.list')
+        ->with('jobs',$jobs)
+        ;
+
+    }
     public function listAll(){
         return view('admin.jobs.list_all');
     }
@@ -73,6 +80,7 @@ class JobsController extends Controller
         $u->salary=$request->salary;
         $u->year_of_experince=$request->experinces;
         $u->company=$request->company;
+        $u->is_active=$request->is_active;
         if($u->save())
         return redirect()->route('/showall_job')
         ->with(['success'=>'user created successful']);
@@ -80,4 +88,41 @@ class JobsController extends Controller
 
     }
     
+    public function edit($job_id){
+        $jobs=job::find($job_id);
+        return view('admin.jobs.edit')
+        ->with('jobs',$jobs);
+
+    }
+    public function toggle($job_id){
+
+        $job=job::find($job_id);
+        $job->is_active*=-1;
+        /*if($cat->is_active==0)
+        $cat->is_active=1;
+        else 
+        $cat->is_active=0;*/
+        if($job->save())
+        return back()->with(['success'=>'data updated successful']);
+        return back()->with(['error'=>'can not update data']);
+
+    }
+    public function update(Request $request,$job_id){
+        $jobss=job::find($job_id);
+        $jobss->title=$request->title;
+        $jobss->Location=$request->location;
+        $jobss->subject=$request->subject;
+        $jobss->roles=$request->description;
+        $jobss->salary=$request->salary;
+        $jobss->year_of_experince=$request->experinces;
+        $jobss->company=$request->company;
+        $jobss->is_active=$request->is_active;
+        
+        if($jobss->save())
+        return redirect()->route('list_jobs')->with(['success'=>'data updated successful']);
+        return redirect()->back()->with(['error'=>'can not update data ']);
+
+
+
+    }
 }

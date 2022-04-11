@@ -19,7 +19,10 @@
           @endforeach
               
           @endif
-          <form id="formAuthentication" class="mb-3" action="{{ route('save_job') }}" method="POST" enctype="multipart/form-data">
+          
+              
+        
+          <form id="formAuthentication" class="mb-3" action="{{ route('update_job',$jobs->id) }}" method="POST" enctype="multipart/form-data">
            @csrf
            <input type="hidden" name="_method" value="post">
 

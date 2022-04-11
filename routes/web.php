@@ -51,8 +51,8 @@ Route::get('/add_companies', function () {
 Route::get('/add_services', function () {
 return view('admin.services.create');
 });
-Route::get('/showall_services', function () {
-    return view('admin.services.list_all');
+Route::get('/us', function () {
+    return view('admin.jobs.listt');
 });
 
 
@@ -74,9 +74,13 @@ Route::get('/show_all_users',[AuthController::class,'listAll'])->name("show_user
 
 
 /////////////////////job route
-Route::get('/showall_job',[JobsController::class,'listAll']);
 Route::get('/add_job',[JobsController::class,'Addjob']);
 Route::post('/create_job',[JobsController::class,'createjob'])->name('save_job');
+Route::get('/edit_job/{job_id}',[JobsController::class,'edit'])->name('edit_job');
+Route::get('/toggle_job/{job_id}',[JobsController::class,'toggle'])->name('toggle_job');
+Route::post('/update_job/{job_id}',[JobsController::class,'update'])->name('update_job');
+Route::get('/list_jobs',[JobsController::class,'index'])->name('list_jobs');
+
 
 /////////////////////compani route
 Route::get('/showall_companies',[CompaniesController::class,'listAll']);

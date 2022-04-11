@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('Email');
             $table->integer('phone');
             $table->text('messege');
+            $table->boolean("is_active")->default(1);
             $table->timestamps();
         });
     }

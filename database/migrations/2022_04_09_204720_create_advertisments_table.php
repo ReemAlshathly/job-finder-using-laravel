@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('url');
             $table->string('image')->default('Adv.png');
             $table->string('company');
+            $table->boolean("is_active")->default(1);
             $table->timestamps();
         });
     }
