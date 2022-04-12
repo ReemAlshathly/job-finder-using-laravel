@@ -178,7 +178,7 @@
           @enderror
             </div>
             <div class="mb-3">
-                <label for="email" class="form-label">Email or Username</label>
+                <label for="email" class="form-label"> User profile</label>
                 <input type="file" class="form-control" id="email" name="profile_image" placeholder="Enter your email or username" autofocus>
               </div>
             <div class="mb-3 form-password-toggle">

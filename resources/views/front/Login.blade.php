@@ -17,14 +17,41 @@
                         <div class="d-flex  align-items-center " style="width: 80%;">
                             <h4 class="text-right">Add Your detials</h4>
                         </div>
-                        
+                        <p class="mb-4">Please sign-in to your account and start the adventure</p>
+            @if ($errors->any())
+            @foreach ($errors->all() as $err)
+            <p class="alert alert-danger">{{ $err }}</p>
+                
+            @endforeach
+                
+            @endif
+
+          <form id="formAuthentication" class="mb-3" action="{{ route('do_login') }}" method="POST" enctype="multipart/form-data">
+            @csrf
                         <div class=" mt-3">
-                          <div class="col-md-12"><label class="labels">full Name</label><input type="text" class="form-control" placeholder="first name" value=""></div>
-                          <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control" value="" placeholder="surname"></div>
+                          <div class="col-md-12"><label class="labels">Email</label>
+                          <input type="text"class="form-control" name="email_username" 
+                          placeholder="Enter your email or username" autofocus>
+                          @error('email_username')
+              <span class="alert alert-danger">{{ $message }}</span>
+          @enderror
+                        </div>
+
+                          <div class="col-md-12">
+                          <a href="auth-forgot-password-basic.html">
+                  <small>Forgot Password?</small>
+                </a>  
+                          <label class="labels">password</label>
+                          <input type="password" class="form-control" name="user_pass" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" >
+                       </div>
+
                       </div>
-                        
-                        <div class="mt-5 text-center"> <a  href="./profile.html" class="btn btn-secondary">Save</a></div>
-                    </div>
+</div>
+                      <div class="mb-3">
+              <button class="btn btn-secondary d-grid w-100" type="submit">log in</button>
+            </div>
+          </form>
+                       
                 </div>
                 
             </div>
