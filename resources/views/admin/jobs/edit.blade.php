@@ -58,7 +58,7 @@
           <br>
           <div>
             <label  class="form-label">job roles description</label>
-            <textarea class="form-control" value="{{ $jobs->roles}}" name="description" rows="3"></textarea>
+            <textarea class="form-control" value="{{ $jobs->role}}" name="description" rows="3"></textarea>
           </div>
           <br>
           <div>

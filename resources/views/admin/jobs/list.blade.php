@@ -35,9 +35,9 @@
            <td>{{ $loop->iteration }}</td>
           <td>{{ $job->id }}</td>
           <td>{{ $job->title }}</td>
-          <td>{{ $job->Company}}</td>
+          <td>{{ $job->company}}</td>
           <td>{{ $job->Location }}</td>
-          <td>{{ $job->Subject }}</td>
+          <td>{{ $job->subject }}</td>
           <td>{{ $job->roles }}</td>
           <td>{{ $job->year_of_experince }}</td>
           <td>{{ $job->	salary}}</td>

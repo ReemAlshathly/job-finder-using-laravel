@@ -11,9 +11,12 @@ use Illuminate\Support\Facades\Validator;
 class AuthController extends Controller
 {
     //
-
+   
     public function listAll(){
-        return view('admin.users.list_users');
+        $user=User::orderBy('id','desc')->get();
+        return view('admin.users.list_users')
+        ->with('users',$user)
+        ;
     }
 
     public function showLogin(){
