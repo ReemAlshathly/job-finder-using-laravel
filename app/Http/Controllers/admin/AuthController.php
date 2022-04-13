@@ -64,7 +64,6 @@ class AuthController extends Controller
     }
 
     public function register(Request $request){
-
         Validator::validate($request->all(),[
             'full_name'=>['required','min:3','max:10'],
             'u_email'=>['required','email','unique:users,email'],
